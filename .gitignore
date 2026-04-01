@@ -1,0 +1,13 @@
+# Ignore generated data
+results/
+output/
+*.bam
+*.fastq
+*.sam
+*.gz
+*.RData
+data/
+*.fastq.gz
+STAR_index/
+logs/
+.snakemake/

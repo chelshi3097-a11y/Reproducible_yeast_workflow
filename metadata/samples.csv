@@ -1,0 +1,7 @@
+Sample_Name,Group,Replicate,Study_Accession,Run_Accession,Download_link
+ERR458493,WT,1,PRJEB5348,ERR458493,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR458/ERR458493/ERR458493.fastq.gz
+ERR458494,WT,2,PRJEB5348,ERR458494,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR458/ERR458494/ERR458494.fastq.gz
+ERR458495,WT,3,PRJEB5348,ERR458495,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR458/ERR458495/ERR458495.fastq.gz
+ERR458500,MUT,1,PRJEB5348,ERR458500,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR458/ERR458500/ERR458500.fastq.gz
+ERR458501,MUT,2,PRJEB5348,ERR458501,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR458/ERR458501/ERR458501.fastq.gz
+ERR458502,MUT,3,PRJEB5348,ERR458502,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR458/ERR458502/ERR458502.fastq.gz
