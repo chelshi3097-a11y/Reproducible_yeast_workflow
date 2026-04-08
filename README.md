@@ -31,6 +31,44 @@ Docker-installed tools:
 - R + Bioconductor packages: DESeq2, ggplot2, pheatmap, ggrepel
 - Utilities: wget, curl, git
 
+
+## Running the Pipeline with Docker
+
+This project uses Docker to ensure a fully reproducible environment with all dependencies pre-installed.
+
+### Build the Docker Image
+
+```
+docker build -t rnaseq_pipeline .
+
+```
+### Running the RNA-seq Pipeline with Docker
+
+#### 1. Start the Docker Container
+
+Open a bash shell inside the container:
+
+```
+docker run -it --rm rnaseq_pipeline
+```
+#### 2. Prepare Scripts
+
+Convert all scripts to Unix line endings before running Snakemake to avoid errors:
+```
+dos2unix scripts/*.R
+dos2unix Snakefile
+```
+> Note: `dos2unix` is used to ensure all scripts have Unix line endings.
+
+#### 3. Execute the Snakemake Pipeline
+
+Inside the container, run:
+
+```
+snakemake --cores 4 --printshellcmds &> snakemake.log
+```
+
+
 ## 3. Data
 ### 3.1 Study / Project Accession
 
