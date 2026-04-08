@@ -229,23 +229,28 @@ The RNA-seq analysis of **wild-type (WT)** and **snf2 KO mutant (MUT)** yeast sa
 The RNA-seq analysis reveals how deletion of **SNF2** impacts gene expression in *Saccharomyces cerevisiae*. Key findings from the visualizations are summarized below:
 
 ### MA Plot
+![MA plot](deseq2_results/MA_plot.png)
 - The MA plot displays log2 fold changes versus mean normalized counts for all genes.  
 - Genes near the M = 0 line (gray points) show no significant expression change, while genes moving away from M = 0 (blue points) are **significantly up- or downregulated** in the snf2Δ mutant.  
 - Genes above M = 0 are upregulated in the mutant, while genes below are downregulated, highlighting the direct and indirect effects of SNF2 deletion.
 
 ### Volcano Plot
+![Volcano plot](deseq2_results/Volcano_plot.png)
 - The Volcano plot highlights **statistically significant DEGs** (adjusted p-value < 0.05) with high magnitude changes.  
 - Points far from the origin in the x-axis (log2 fold change) and y-axis (-log10 padj) represent the most strongly affected genes.  
 - Most significant candidates were identified and labelled for further study or pathway analysis. 
 
 ### PCA Plot
+
+![PCA plot](deseq2_results/PCA_plot.png)
 - Principal Component Analysis (PCA) shows how samples cluster based on overall gene expression patterns.  
 - Clustering confirms separation between wild-type (WT) and mutant (snf2Δ) samples.  
 - Separation between WT and MUT indicates that SNF2 deletion produces detectable transcriptomic changes.
 - Outliers may indicate sample mislabeling or technical variation ensuring reliable downstream anlaysis, as observed with one mutant sample clustering near WT, which was then corrected immediately.
 
 ### Heatmaps
-- **Top DE Genes Heatmap:**  
+- **Top DE Genes Heatmap:**
+  ![Top20 Genes plot](deseq2_results/Top20_DE_genes_heatmap.png)
   - Displays expression levels of the top 20 differentially expressed genes across all samples.  
   - Dark red indicates high expression; dark blue indicates low expression.  
   - Patterns reflect genes that are consistently up- or downregulated in the mutant relative to WT.
