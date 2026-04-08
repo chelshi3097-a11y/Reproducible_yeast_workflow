@@ -1,7 +1,7 @@
 # Rnaseq_workflow_yeast
-Differential gene expression analysis of 6 RNA-seq samples of yeast between two experimental groups: wild-type (WT) and SNF2 knockout (snf2 KO) mutant. 
+RNA-seq pipeline for yeast (WT vs SNF2 knockout(MUT)) with automated Snakemake workflow and Docker environment.
 ## Introduction
-This repository contains a fully reproducible RNA-seq analysis pipeline for Saccharomyces cerevisiae to identify differentially expressed genes between two experimental groups: wild-type (WT) and SNF2 knockout (snf2 KO) mutant. SNF2 encodes the ATPase subunit of the SWI/SNF chromatin-remodeling complex, which regulates transcription by repositioning nucleosomes and making DNA accessible to transcription machinery. Deletion of SNF2 disrupts chromatin remodeling, leading to altered gene expression across the genome.
+This repository contains a fully reproducible RNA-seq analysis pipeline for 6 RNA-seq samples of Saccharomyces cerevisiae to identify differentially expressed genes between two experimental groups: wild-type (WT) and SNF2 knockout (snf2 KO) mutant. SNF2 encodes the ATPase subunit of the SWI/SNF chromatin-remodeling complex, which regulates transcription by repositioning nucleosomes and making DNA accessible to transcription machinery. Deletion of SNF2 disrupts chromatin remodeling, leading to altered gene expression across the genome.
 The workflow is automated using Snakemake inside a Docker container, and it covers all standard RNA-seq steps in NGS-based expression profiling:
 1.	Download raw FASTQ files
 2.	Preprocess reads (quality control)
