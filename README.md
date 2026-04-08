@@ -80,7 +80,7 @@ Organism: *Saccharomyces cerevisiae* (Tax ID: 4932)
 ### 3.2 Raw RNA-seq Data
 Raw RNA-seq data were downloaded from ENA/SRA. The table below lists the run accessions (ERR IDs) used for analysis:
 
-| Sample ID | Run Accession | Link |
+| **Sample ID** | **Run Accession** | **Link** |
 |-----------|---------------|------|
 | SAMEA2400697 | ERR458493 | [ENA](https://www.ebi.ac.uk/ena/browser/view/ERR458493) |
 | SAMEA2400698 | ERR458494 | [ENA](https://www.ebi.ac.uk/ena/browser/view/ERR458494) |
